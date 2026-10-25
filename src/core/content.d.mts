@@ -1,0 +1,10 @@
+import type { Mode, Reply, Settings, Turn, Selection } from "../types";
+export const DEFAULT_SETTINGS: Settings;
+export const RESPONSE_SCHEMA: Record<string, unknown>;
+export function parseResponse(raw: string, mode?: Mode): Reply;
+export function modelArguments(model?: string): string[];
+export function createPrompt(options: { mode: Mode; source?: string; draft?: string | null; history?: Turn[]; request?: string; settings?: Settings }): string;
+export function preserveBoundaries(text: string, original: string): string;
+export function normalizeSettings(value: unknown): Settings;
+export function assertSelectionUnchanged(original: Selection | null, current: Selection | null): void;
+export function replaceVerified(original: Selection | null, text: string, adapter: { capture: () => Promise<Selection>; paste: (value: string) => Promise<void> }): Promise<void>;

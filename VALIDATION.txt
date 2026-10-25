@@ -1,0 +1,24 @@
+GPT Tools 1.2.0 - validated 22 October 2026
+
+PASS: 53 local automated tests.
+PASS: Full TypeScript check against installed Raycast API and React types.
+PASS: All three command entry points bundled with runtime packages external.
+PASS: Native model dropdown, custom model ID, language and writing settings.
+PASS: Native preferences override older local settings, custom model ID wins,
+      and writing style can be cleared. Display title is GPT Tools.
+
+Raycast registration rebuild was blocked by sandbox EPERM when writing to
+C:\Users\tatsu\.config\raycast\extensions. Automatic approval review rejected
+escalation. Run Install.cmd outside this chat to refresh the development entry.
+Live native UI, editor replacement and real inference were not tested here.
+
+Icon: locally drawn ChatGPT-inspired geometric mark with an editing badge.
+Downloading the external logo asset was blocked; automatic approval review
+rejected that download escalation request.
+1.1.1: Quick Fix closes the launcher before selection capture. Live editor
+compatibility remains unverified. Removed the separate login-status process
+from generation; ChatGPT auth is still forced. Model refresh is now explicit.
+
+1.2.0: Independent Quick Fix instructions are tested for mode isolation. Rewrite
+puts Replace Selection first, with Copy Draft secondary. White-background icon
+was rendered and visually inspected. TypeScript, 53 tests and bundles pass.
