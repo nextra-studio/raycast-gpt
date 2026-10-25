@@ -11,7 +11,7 @@
   "description": "Quick fixes, rewriting, translation and chat with your ChatGPT subscription through Codex.",
   "icon": "extension-icon.png",
   "author": "tatsuki0123",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "platforms": [
     "Windows"
   ],
